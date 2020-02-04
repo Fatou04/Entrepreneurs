@@ -29,7 +29,6 @@ struct ActivityView2: View {
                         Text("Casino")
                             .multilineTextAlignment(.trailing)
                             
-                            
                         Spacer()
                     }
                     
