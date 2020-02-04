@@ -36,7 +36,7 @@ struct ActivityView4: View {
                         Text("Client")
                         .fontWeight(.semibold)
                         Spacer()
-                        NavigationLink(destination: CustomerListView()) {
+                        NavigationLink(destination: CustomerCardView()) {
                             Text("Steve Jobs")
                             .buttonStyle(PlainButtonStyle())
                         }
