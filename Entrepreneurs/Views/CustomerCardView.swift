@@ -9,18 +9,11 @@
 import SwiftUI
 
 struct CustomerCardView: View {
+    
     var body: some View {
         
-            ZStack{
                 VStack (spacing: 40) {
                     VStack{
-                        HStack{
-                            Text("")
-                                .navigationBarTitle("Contact", displayMode: .inline)
-                                .navigationBarItems(leading: Text("Retour"),
-                                                    trailing: Text("Modifer"))
-                        }
-                        
                         HStack{
                             Image("image")
                                 .resizable()
@@ -31,7 +24,7 @@ struct CustomerCardView: View {
                         
                         VStack(spacing: 10) {
                             HStack{
-                                Text("Steev")
+                                Text("Steve")
                                     .font(.headline)
                                     .fontWeight(.bold)
                                 Text("JOBS")
@@ -53,41 +46,51 @@ struct CustomerCardView: View {
                             Text(" ")
                             Image(systemName: "phone.circle")
                         }
-                        Spacer()
                     }
                     
-                    VStack(alignment: .leading, spacing: 20){
-                        Text("Téléphone   0629430647")
-                        Text("Email            steve.job@apple.com")
-                        Text("Adresse")
-                        Text("2 Avenue du General de Gaule,                 93110,Rony-Sous-Bois")
-                        
-                    }
-                    .padding()
-                    
-                    VStack(alignment: .leading, spacing: -20){
-                        HStack{
-                            Text("Note :")
-                                .font(.headline)
-                                .fontWeight(.bold)
-                                .foregroundColor(Color.orange)
-                                .padding()
+                    VStack(spacing: 40) {
+                        Form{
+                            HStack{
+                                Text("Entreprise")
+                                .fontWeight(.semibold)
+                                Spacer()
+                                Text("Apple")
+                            }
+                            HStack{
+                                Text("Téléphone")
+                                .fontWeight(.semibold)
+                                Spacer()
+                                Text("+336 765 654 65")
+                            }
+                            HStack{
+                                Text("Email")
+                                .fontWeight(.semibold)
+                                Spacer()
+                                Text("steve.jobs@apple.com")
+                            }
+                            HStack{
+                                Text("Adresse")
+                                .fontWeight(.semibold)
+                                Spacer()
+                                Text("2 rue de la pomme, \r 94500 Montreuil")
+                                    .multilineTextAlignment(.trailing)
+                            }
                             Spacer()
-                        }
-                        ZStack{
-                            Color.white
-                                .frame(width: 380.0, height: 130.0)
-                                .border(Color.black, width: 1)
-                                .padding()
-                            VStack(alignment: .leading, spacing: 10){
-                                Text("Contract Itunes Terminé. Contrat Safari en cours de réalisasion.")
-                                    .fontWeight(.ultraLight)
+                            
+                            VStack(alignment: .leading){
+                               
+                                    Text("Note")
+                                        .font(.headline)
+                                        .fontWeight(.semibold)
+                                    Text("Contrat Itunes terminé, contrat Safari en cours de réalisation.")
+                                    .padding(.bottom, 100.0)
                             }
                         }
-                        Spacer()
                     }
-                }
-            }
+                    .padding()
+                }.navigationBarTitle("Contact", displayMode: .inline)
+                .navigationBarItems(trailing: Text("Modifer"))
+            
         
     }
 }

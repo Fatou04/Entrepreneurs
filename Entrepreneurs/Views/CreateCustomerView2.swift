@@ -122,7 +122,7 @@ struct CreateCustomerView2: View {
                             }
                             
                             VStack(alignment: .leading) {
-                                Text("Notes :")
+                                Text("Notes")
                                 TextField(" ...", text: $note)
                                     .padding(.bottom, 100.0)
                                     .foregroundColor(.gray)
