@@ -12,7 +12,7 @@ struct WeekPlanningView: View {
        var body: some View {
             
         HStack{
-            Spacer ()
+            
             VStack{
                 Text("H")
                 .font(.headline)
@@ -72,8 +72,6 @@ struct WeekPlanningView: View {
                 VStack{
                   Text("23")
                   Divider()
-                  Text("24")
-                  Divider()
                 }.font(.footnote)
             }
             
@@ -85,7 +83,7 @@ struct WeekPlanningView: View {
                     
                 Rectangle()
                 .fill(Color.red)
-                .frame(width: 40.0, height: 680.0)
+                .frame(width: 40.0, height: 640.0)
             }.border(/*@START_MENU_TOKEN@*/Color.black/*@END_MENU_TOKEN@*/, width: /*@START_MENU_TOKEN@*/1/*@END_MENU_TOKEN@*/)
             .padding(.vertical, 10 )
             
@@ -97,7 +95,7 @@ struct WeekPlanningView: View {
                     
                 Rectangle()
                 .fill(Color.green)
-                .frame(width: 40.0, height: 680.0)
+                .frame(width: 40.0, height: 640.0)
             }.border(/*@START_MENU_TOKEN@*/Color.black/*@END_MENU_TOKEN@*/, width: /*@START_MENU_TOKEN@*/1/*@END_MENU_TOKEN@*/)
             .padding(.vertical, 10 )
 
@@ -109,7 +107,7 @@ struct WeekPlanningView: View {
                     
                 Rectangle()
                 .fill(Color(red: 0.33, green: 0.33, blue: 0.33, opacity: 0.3))
-                .frame(width: 40.0, height: 680.0)
+                .frame(width: 40.0, height: 640.0)
             }.border(/*@START_MENU_TOKEN@*/Color.black/*@END_MENU_TOKEN@*/, width: /*@START_MENU_TOKEN@*/1/*@END_MENU_TOKEN@*/)
             .padding(.vertical, 10 )
 
@@ -121,7 +119,7 @@ struct WeekPlanningView: View {
                     
                 Rectangle()
                 .fill(Color.orange)
-                .frame(width: 40.0, height: 680.0)
+                .frame(width: 40.0, height: 640.0)
             }.border(/*@START_MENU_TOKEN@*/Color.black/*@END_MENU_TOKEN@*/, width: /*@START_MENU_TOKEN@*/1/*@END_MENU_TOKEN@*/)
             .padding(.vertical, 10 )
                 
@@ -133,7 +131,7 @@ struct WeekPlanningView: View {
                     
                 Rectangle()
                 .fill(Color.green)
-                .frame(width: 40.0, height: 680.0)
+                .frame(width: 40.0, height: 640.0)
             }.border(/*@START_MENU_TOKEN@*/Color.black/*@END_MENU_TOKEN@*/, width: /*@START_MENU_TOKEN@*/1/*@END_MENU_TOKEN@*/)
             .border(/*@START_MENU_TOKEN@*/Color.black/*@END_MENU_TOKEN@*/, width: /*@START_MENU_TOKEN@*/1/*@END_MENU_TOKEN@*/)
             .padding(.vertical, 10 )
@@ -146,7 +144,7 @@ struct WeekPlanningView: View {
                     
                 Rectangle()
                 .fill(Color(red: 0.33, green: 0.33, blue: 0.33, opacity: 0.3))
-                    .frame(width: 40.0, height: 680.0)
+                    .frame(width: 40.0, height: 640.0)
             }.border(/*@START_MENU_TOKEN@*/Color.black/*@END_MENU_TOKEN@*/, width: /*@START_MENU_TOKEN@*/1/*@END_MENU_TOKEN@*/)
             .padding(.vertical, 10 )
                     
@@ -187,14 +185,8 @@ struct WeekPlanningView: View {
                 
                  Rectangle()
                  .fill(Color.orange)
-                 .frame(width: 40.0, height: 50.0)
+                 .frame(width: 40.0, height: 30.0)
                  .padding(1.0)
-                
-                Rectangle()
-                .fill(Color.red)
-                .frame(width: 40.0, height: 10.0)
-                 .padding(1.0)
-                
             }.border(/*@START_MENU_TOKEN@*/Color.black/*@END_MENU_TOKEN@*/, width: /*@START_MENU_TOKEN@*/1/*@END_MENU_TOKEN@*/)
             .padding(.vertical, 10 )
         }
