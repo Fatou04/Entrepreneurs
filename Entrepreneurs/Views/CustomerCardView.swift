@@ -57,9 +57,10 @@ struct CustomerCardView: View {
                     }
                     
                     VStack(alignment: .leading, spacing: 20){
-                        Text("0629430647")
-                        Text("steve.job@apple.com")
-                        Text("2 Avenue du General de Gaule,93110,Rony-Sous-Bois")
+                        Text("Téléphone   0629430647")
+                        Text("Email            steve.job@apple.com")
+                        Text("Adresse")
+                        Text("2 Avenue du General de Gaule,                 93110,Rony-Sous-Bois")
                         
                     }
                     .padding()
@@ -79,11 +80,7 @@ struct CustomerCardView: View {
                                 .border(Color.black, width: 1)
                                 .padding()
                             VStack(alignment: .leading, spacing: 10){
-                                Text("Contract Itunes Terminé.")
-                                    .font(.title)
-                                    .fontWeight(.ultraLight)
-                                Text("Contrat Safari en cours de réalisasion.")
-                                    .font(.title)
+                                Text("Contract Itunes Terminé. Contrat Safari en cours de réalisasion.")
                                     .fontWeight(.ultraLight)
                             }
                         }
