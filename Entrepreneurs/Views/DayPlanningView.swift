@@ -164,7 +164,7 @@ struct DayPlanningView: View {
                 .padding(.horizontal, 30.0)
                 //.padding(.bottom, 20.0)
                     
-                .navigationBarTitle(Text("Agenda journalier"), displayMode: .inline)
+                .navigationBarTitle(Text("Vue Jour"), displayMode: .inline)
                 .navigationBarItems(
                     trailing: NavigationLink(destination: CreateActivityView()) {
                     Image(systemName:"text.badge.plus")

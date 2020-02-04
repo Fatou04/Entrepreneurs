@@ -78,7 +78,7 @@ struct CreateCustomerView2: View {
                                         }
                                     })
                                     {
-                                        Text("Ajouter une image")
+                                        Text("+ Ajouter une image")
                                             .fontWeight(.heavy)
                                     }
                                 }
@@ -95,23 +95,29 @@ struct CreateCustomerView2: View {
                     VStack(spacing: 40) {
                         Form{
                             HStack{
+                                Text("Nom")
                                 TextField("Nom", text: $lastName)
                                     .foregroundColor(.primary)
                             }
                             
                             HStack{
+                                Text("Prénom")
                                 TextField("Prénom", text: $firstName)
                             }
                             HStack{
+                                Text("Entreprise")
                                 TextField("Entreprise", text: $firm)
                             }
                             HStack{
+                                Text("Téléphone")
                                 TextField("Téléphone", text: $phoneNumber)
                             }
                             HStack{
+                                Text("Email")
                                 TextField("Email", text: $mail)
                             }
                             HStack{
+                                Text("Adresse")
                                 TextField("Adresse", text: $direction)
                             }
                             

@@ -22,7 +22,7 @@ struct ActivityView2: View {
                     
                     
                     HStack{
-                        Text("Nom de l'activité :")
+                        Text("Activité :")
                             .font(.headline)
                             .fontWeight(.heavy)
                         Spacer(minLength: 225)
