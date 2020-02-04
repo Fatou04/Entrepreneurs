@@ -56,12 +56,15 @@ struct CustomerListView: View {
                 List {
                     // Filtered list of names
                     ForEach(array.filter{$0.hasPrefix(searchText) || searchText == ""}, id:\.self) {
-                        searchText in Text(searchText)
+                        searchText in
+                        NavigationLink(destination: CustomerCardView(), label :  {
+                            Text(searchText)
+                        })
                     }
                 }
                 .navigationBarTitle(Text("Clients"), displayMode: .inline).navigationBarItems(
                     //leading: Image(systemName:"calendar"),
-                    trailing: NavigationLink(destination: CreateCustomerView()) {
+                    trailing: NavigationLink(destination: CreateCustomerView2()) {
                         Image(systemName:"person.badge.plus")
                     }.buttonStyle(PlainButtonStyle()))
                     .resignKeyboardOnDragGesture()

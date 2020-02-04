@@ -10,7 +10,7 @@ import SwiftUI
 
 struct CustomerCardView: View {
     var body: some View {
-        NavigationView{
+        
             ZStack{
                 VStack (spacing: 40) {
                     VStack{
@@ -91,12 +91,14 @@ struct CustomerCardView: View {
                     }
                 }
             }
-        }
+        
     }
 }
 
 struct CustomerCardView_Previews: PreviewProvider {
     static var previews: some View {
-        CustomerCardView()
+        NavigationView {
+            CustomerCardView()
+        }
     }
 }

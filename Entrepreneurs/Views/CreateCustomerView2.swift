@@ -1,5 +1,5 @@
 //
-//  CreateCustomerView.swift
+//  CreateCustomerView2.swift
 //  Entrepreneurs
 //
 //  Created by Audrey Detsaboun on 03/02/2020.
@@ -9,7 +9,7 @@
 
 import SwiftUI
 
-struct CreateCustomerView: View {
+struct CreateCustomerView2: View {
     @State private var lastName: String = ""
     @State private var firstName: String = ""
     @State private var firm: String = ""
@@ -91,60 +91,54 @@ struct CreateCustomerView: View {
                         .foregroundColor(Color.gray)
                     }
                     
+                    
                     VStack(spacing: 40) {
-                        VStack{
+                        Form{
                             HStack{
-                                Text("lastName:")
-                                TextField("lastName", text: $lastName)
-                                    
-                                    .border(Color.gray).foregroundColor(.primary)
+                                TextField("Nom", text: $lastName)
+                                    .foregroundColor(.primary)
                             }
                             
                             HStack{
-                                Text("firstName:")
-                                TextField("PrélastName", text: $firstName)
-                                    .border(Color.gray)
+                                TextField("Prénom", text: $firstName)
                             }
                             HStack{
-                                Text("firm:")
-                                TextField("firm", text: $firm)
-                                    .border(Color.gray)
+                                TextField("Entreprise", text: $firm)
                             }
                             HStack{
-                                Text("phoneNumber:")
-                                TextField("phoneNumber", text: $phoneNumber)
-                                    .border(Color.gray)
+                                TextField("Téléphone", text: $phoneNumber)
                             }
                             HStack{
-                                Text("Mail:")
-                                TextField("mail", text: $mail)
-                                    .border(Color.gray)
+                                TextField("Email", text: $mail)
                             }
                             HStack{
-                                Text("direction:")
-                                TextField("direction", text: $direction)
-                                    .border(Color.gray)
+                                TextField("Adresse", text: $direction)
                             }
-                            HStack{
-                                Text("Note:")
-                                TextField("Note Particulier", text: $note)
-                                    .border(Color.gray)
+                            
+                            VStack(alignment: .leading) {
+                                Text("Notes :")
+                                TextField(" ...", text: $note)
+                                    .padding(.bottom, 100.0)
+                                    .foregroundColor(.gray)
+                                    .border(Color.gray, width: /*@START_MENU_TOKEN@*/1/*@END_MENU_TOKEN@*/)
                             }
+                            Spacer()
                         }
                     }
                     .padding()
-                    .font(.title)
-                    Spacer()
+                    
+                    
+                    
                 }
             }
         
     }
 }
 
-struct CreateCustomerView_Previews: PreviewProvider {
+struct CreateCustomerView2_Previews: PreviewProvider {
     static var previews: some View {
         NavigationView {
-            CreateCustomerView()
+            CreateCustomerView2()
         }
     }
 }
