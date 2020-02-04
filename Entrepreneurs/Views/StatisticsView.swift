@@ -15,13 +15,22 @@ struct StatisticsView: View {
     var body: some View {
         NavigationView{
             VStack{
+                HStack{
+                    Text("Sélectionner le mois")
+                    Spacer()
+                    Text("Août")
+                }.padding(20)
+                Spacer()
                 HStack(alignment: .lastTextBaseline){
                     ForEach(viewModel.all(), id: \.activity) { statistic in BarView(statistic: statistic)
                     }
                 }
+                Spacer()
             }
         }
     }
+    
+    
     struct BarView: View {
         let statistic: Statistic
         
@@ -36,6 +45,7 @@ struct StatisticsView: View {
                     .fill(statistic.revenue > 50 ? Color.red : Color.gray)
                     .frame(width: 80, height:CGFloat(yValue))
                 Text(statistic.activity)
+                
             }.navigationBarTitle(Text("Statistiques d'août 2019"), displayMode: .inline).navigationBarItems(
                 trailing: Image(systemName:"paperclip"))
         }

@@ -22,7 +22,7 @@ struct CreateActivityView: View {
             Form {
                 HStack {
                     Text("Nom")
-                    TextField("Nom de l'activité", text: $activityName)
+                    TextField("nom de l'activité", text: $activityName)
                         .foregroundColor(.gray)
                 }
 //
@@ -55,7 +55,7 @@ struct CreateActivityView: View {
                 
                 HStack {
                     Text("Client")
-                    NavigationLink(destination: CreateCustomerView()) {
+                    NavigationLink(destination: CreateCustomerView2()) {
                     TextField("nom du client", text: $clientName)
                         .foregroundColor(.gray)
                     .buttonStyle(PlainButtonStyle())
@@ -64,7 +64,7 @@ struct CreateActivityView: View {
                 }
                 
                 VStack(alignment: .leading) {
-                    Text("Notes :")
+                    Text("Notes")
                     TextField(" ...", text: $notes)
                         .padding(.bottom, 300.0)
                         .foregroundColor(.gray)
@@ -76,7 +76,7 @@ struct CreateActivityView: View {
             .navigationBarTitle(Text("Nouvelle Activité"), displayMode: .inline)
             
             .navigationBarItems(
-                trailing: NavigationLink(destination: ActivityView()) {
+                trailing: NavigationLink(destination: ActivityView4()) {
                 Text("Valider")
             }.buttonStyle(PlainButtonStyle()))
             .resignKeyboardOnDragGesture()

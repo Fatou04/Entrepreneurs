@@ -104,7 +104,7 @@ struct DayPlanningView: View {
                                 .fill(Color.red)
                                 .frame(width: 280.0, height: 100.0)
                                 .padding(1.0)
-                            NavigationLink(destination: ActivityView2()) {
+                            NavigationLink(destination: ActivityView3()) {
                                 Text("Casino")
                                     .font(.title)
                                     .fontWeight(.medium)
@@ -166,6 +166,8 @@ struct DayPlanningView: View {
                     
                 .navigationBarTitle(Text("Vue Jour"), displayMode: .inline)
                 .navigationBarItems(
+                    leading: NavigationLink(destination: WeekPlanningView()) {
+                        Image(systemName: "calendar") }.buttonStyle(PlainButtonStyle()).resignKeyboardOnDragGesture(),
                     trailing: NavigationLink(destination: CreateActivityView()) {
                     Image(systemName:"text.badge.plus")
                 }.buttonStyle(PlainButtonStyle()))

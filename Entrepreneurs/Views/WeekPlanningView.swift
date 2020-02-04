@@ -10,7 +10,7 @@ import SwiftUI
 
 struct WeekPlanningView: View {
        var body: some View {
-            NavigationView{
+            
         HStack{
             Spacer ()
             VStack{
@@ -207,13 +207,14 @@ struct WeekPlanningView: View {
             Image(systemName:"text.badge.plus")
         }.buttonStyle(PlainButtonStyle()))
         .resignKeyboardOnDragGesture()
-        }
-                
+          
             }
         }
 
 struct WeekPlanningView_Previews: PreviewProvider {
     static var previews: some View {
-        WeekPlanningView()
+        NavigationView {
+            WeekPlanningView()
+        }
     }
 }
