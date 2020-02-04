@@ -104,10 +104,13 @@ struct DayPlanningView: View {
                                 .fill(Color.red)
                                 .frame(width: 280.0, height: 100.0)
                                 .padding(1.0)
-                            Text("Casino")
-                                .font(.title)
-                                .fontWeight(.medium)
-                                .foregroundColor(Color.white)
+                            NavigationLink(destination: ActivityView2()) {
+                                Text("Casino")
+                                    .font(.title)
+                                    .fontWeight(.medium)
+                                    .foregroundColor(Color.white)
+                                .buttonStyle(PlainButtonStyle())
+                            }
                         }
                         ZStack{
                             Rectangle()
