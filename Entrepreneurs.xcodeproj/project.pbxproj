@@ -17,6 +17,7 @@
 		CC45CEB723E858200027A2DF /* ImagePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC45CEB623E858200027A2DF /* ImagePickerView.swift */; };
 		CC45CEBD23E869C70027A2DF /* StatisticsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC45CEBC23E869C70027A2DF /* StatisticsViewModel.swift */; };
 		CC45CEBF23E869E10027A2DF /* Statistic.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC45CEBE23E869E10027A2DF /* Statistic.swift */; };
+		CCC02A7023E9699F00FCE7DA /* ActivityView2.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCC02A6F23E9699F00FCE7DA /* ActivityView2.swift */; };
 		CCD9102723E81D5F0025B11E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCD9102623E81D5F0025B11E /* AppDelegate.swift */; };
 		CCD9102923E81D5F0025B11E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCD9102823E81D5F0025B11E /* SceneDelegate.swift */; };
 		CCD9102B23E81D5F0025B11E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCD9102A23E81D5F0025B11E /* ContentView.swift */; };
@@ -40,6 +41,7 @@
 		CC45CEB623E858200027A2DF /* ImagePickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePickerView.swift; sourceTree = "<group>"; };
 		CC45CEBC23E869C70027A2DF /* StatisticsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticsViewModel.swift; sourceTree = "<group>"; };
 		CC45CEBE23E869E10027A2DF /* Statistic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Statistic.swift; sourceTree = "<group>"; };
+		CCC02A6F23E9699F00FCE7DA /* ActivityView2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityView2.swift; sourceTree = "<group>"; };
 		CCD9102323E81D5F0025B11E /* Entrepreneurs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Entrepreneurs.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CCD9102623E81D5F0025B11E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CCD9102823E81D5F0025B11E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -123,6 +125,7 @@
 				CCD9103F23E82A580025B11E /* CustomerListView.swift */,
 				CCD9104123E82A6A0025B11E /* StatisticsView.swift */,
 				CC45CEAC23E848180027A2DF /* ActivityView.swift */,
+				CCC02A6F23E9699F00FCE7DA /* ActivityView2.swift */,
 				CC45CEAE23E849400027A2DF /* CreateActivityView.swift */,
 				CC45CEB023E84B7A0027A2DF /* CreateCustomerView.swift */,
 				CC45CEB223E853080027A2DF /* CustomerCardView.swift */,
@@ -215,6 +218,7 @@
 				CCD9103E23E82A430025B11E /* DayPlanningView.swift in Sources */,
 				CCD9104223E82A6A0025B11E /* StatisticsView.swift in Sources */,
 				CCD9102723E81D5F0025B11E /* AppDelegate.swift in Sources */,
+				CCC02A7023E9699F00FCE7DA /* ActivityView2.swift in Sources */,
 				CC45CEB723E858200027A2DF /* ImagePickerView.swift in Sources */,
 				CC45CEAD23E848180027A2DF /* ActivityView.swift in Sources */,
 				CC45CEB323E853080027A2DF /* CustomerCardView.swift in Sources */,

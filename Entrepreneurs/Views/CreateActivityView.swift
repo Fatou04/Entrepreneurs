@@ -18,7 +18,7 @@ struct CreateActivityView: View {
     
     
     var body: some View {
-        NavigationView {
+       
             Form {
                 HStack {
                     Text("Nom")
@@ -55,8 +55,12 @@ struct CreateActivityView: View {
                 
                 HStack {
                     Text("Client")
+                    NavigationLink(destination: CreateCustomerView()) {
                     TextField("nom du client", text: $clientName)
                         .foregroundColor(.gray)
+                    .buttonStyle(PlainButtonStyle())
+                        
+                    }
                 }
                 
                 VStack(alignment: .leading) {
@@ -78,12 +82,14 @@ struct CreateActivityView: View {
             .resignKeyboardOnDragGesture()
             
             
-        }
+        
     }
 }
 
 struct CreateActivityView_Previews: PreviewProvider {
     static var previews: some View {
-        CreateActivityView()
+        NavigationView {
+            CreateActivityView()
+        }
     }
 }

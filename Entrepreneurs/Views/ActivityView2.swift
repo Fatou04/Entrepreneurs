@@ -1,5 +1,5 @@
 //
-//  ActivityView.swift
+//  ActivityView2.swift
 //  Entrepreneurs
 //
 //  Created by Audrey Detsaboun on 03/02/2020.
@@ -8,7 +8,7 @@
 
 import SwiftUI
 
-struct ActivityView: View {
+struct ActivityView2: View {
     var body: some View {
         
             VStack(alignment: .leading, spacing: 20){
@@ -25,8 +25,11 @@ struct ActivityView: View {
                         Text("Nom de l'activité :")
                             .font(.headline)
                             .fontWeight(.heavy)
-                        Spacer()
-                        Text("        Réunion de cadrage")
+                        Spacer(minLength: 225)
+                        Text("Casino")
+                            .multilineTextAlignment(.trailing)
+                            
+                            
                         Spacer()
                     }
                     
@@ -36,9 +39,11 @@ struct ActivityView: View {
                             .font(.headline)
                             .fontWeight(.heavy)
                         Spacer()
-                        Text("10-07-2019")
+                        Text("7/2/2020, 8:30 AM")
                             .font(.headline)
                             .fontWeight(.regular)
+                        .multilineTextAlignment(.trailing)
+                            .padding(.trailing, -65.0)
                         Spacer()
                     }
                     
@@ -47,9 +52,11 @@ struct ActivityView: View {
                             .font(.headline)
                             .fontWeight(.heavy)
                         Spacer()
-                        Text("15-02-2020")
+                        Text("7/2/2020, 11:30 AM")
                             .font(.headline)
                             .fontWeight(.regular)
+                            .multilineTextAlignment(.trailing)
+                            .padding(.trailing, -60.0)
                         Spacer()
                     }
                     
@@ -60,7 +67,7 @@ struct ActivityView: View {
                             .fontWeight(.heavy)
                     }
                     
-                    Color.orange
+                    Color.red
                         .frame(width: 380.0, height: 50.0)
                     
                     
@@ -84,7 +91,7 @@ struct ActivityView: View {
                             .frame(width: 380.0, height: 130.0)
                             .border(Color.black, width: 1)
                         HStack{
-                            Text("Rdv à 10h30 avec client. Projet en cours. Validation de la maquette ")
+                            Text("RDV client pour validation de la maquette.")
                         }
                     }
                 }
@@ -95,10 +102,10 @@ struct ActivityView: View {
     }
 }
 
-struct ActivityView_Previews: PreviewProvider {
+struct ActivityView2_Previews: PreviewProvider {
     static var previews: some View {
         NavigationView {
-            ActivityView()
+            ActivityView2()
         }
     }
 }
