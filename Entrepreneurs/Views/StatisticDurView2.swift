@@ -1,5 +1,5 @@
 //
-//  StatisticDurView.swift
+//  StatisticDurView2.swift
 //  Entrepreneurs
 //
 //  Created by Sylvie J on 05/02/2020.
@@ -8,24 +8,19 @@
 
 import SwiftUI
 
-struct StatisticDurView: View {
+struct StatisticDurView2: View {
     var body: some View {
-        NavigationView{
+        
             VStack(alignment: .center){
                 Spacer()
                 HStack{
                     Text("Sélectionner le mois")
                     Spacer()
                     Image(systemName:"chevron.left")
-                    Text(" Août 2019 ")
+                    Text(" Septembre 2019 ")
                         .font(.headline)
                         .fontWeight(.semibold)
-                    
-                    NavigationLink(destination:StatisticDurView2()) {
-                        Image(systemName:"chevron.right")
-                    }.buttonStyle(PlainButtonStyle())
-                    .resignKeyboardOnDragGesture()
-                    
+                    Image(systemName:"chevron.right")
                 }
                 .padding(.horizontal, 20)
                 
@@ -37,7 +32,7 @@ struct StatisticDurView: View {
                         Rectangle()
                             .fill(Color.green)
                             .frame(width: 90.0, height: 50.0)
-                        Text("8%")
+                        Text("10%")
                             .foregroundColor(Color.white)
                             .font(.title)
                             .fontWeight(.medium)
@@ -45,7 +40,7 @@ struct StatisticDurView: View {
                     ZStack{
                         Rectangle()
                             .fill(Color.blue)
-                            .frame(width: 90.0, height: 150.0)
+                            .frame(width: 90.0, height: 200.0)
                         Text("30%")
                             .foregroundColor(Color.white)
                             .font(.title)
@@ -54,8 +49,8 @@ struct StatisticDurView: View {
                     ZStack{
                         Rectangle()
                             .fill(Color.orange)
-                            .frame(width: 90.0, height: 250.0)
-                        Text("50%")
+                            .frame(width: 90.0, height: 100.0)
+                        Text("20%")
                             .foregroundColor(Color.white)
                             .font(.title)
                             .fontWeight(.medium)
@@ -63,8 +58,8 @@ struct StatisticDurView: View {
                     ZStack{
                         Rectangle()
                             .fill(Color.red)
-                            .frame(width: 90.0, height: 70.0)
-                        Text("12%")
+                            .frame(width: 90.0, height: 300.0)
+                        Text("40%")
                             .foregroundColor(Color.white)
                             .font(.title)
                             .fontWeight(.medium)
@@ -83,13 +78,13 @@ struct StatisticDurView: View {
                         .fontWeight(.semibold)
                         .foregroundColor(Color.black)
                         .multilineTextAlignment(.center)
-                    
+                   
                     Text("RdV")
                         .font(.headline)
                         .fontWeight(.semibold)
                         .foregroundColor(Color.black)
                         .multilineTextAlignment(.center)
-                    
+                   
                     Text("Travail")
                         .font(.headline)
                         .fontWeight(.semibold)
@@ -98,20 +93,16 @@ struct StatisticDurView: View {
                 }
                 .padding(.leading, 10.0)
                 Spacer()
-            }
-            .padding(.horizontal, 10)
+            }.padding(.horizontal, 10)
             .navigationBarTitle(Text("Statistiques d'août 2019"), displayMode: .inline).navigationBarItems(
             trailing: Image(systemName:"paperclip"))
-        }
-        .tabItem {
-        Image(systemName: "chart.pie")
-            Text("Stats")}
+       
     }
     
 }
 
-struct StatisticDurView_Previews: PreviewProvider {
+struct StatisticDurView2_Previews: PreviewProvider {
     static var previews: some View {
-        StatisticDurView()
+        StatisticDurView2()
     }
 }
