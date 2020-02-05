@@ -17,7 +17,6 @@
 		CC45CEB723E858200027A2DF /* ImagePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC45CEB623E858200027A2DF /* ImagePickerView.swift */; };
 		CC45CEBD23E869C70027A2DF /* StatisticsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC45CEBC23E869C70027A2DF /* StatisticsViewModel.swift */; };
 		CC45CEBF23E869E10027A2DF /* Statistic.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC45CEBE23E869E10027A2DF /* Statistic.swift */; };
-		CC73B32823EB572000D8AE9A /* CustomerCardView2.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC73B32723EB572000D8AE9A /* CustomerCardView2.swift */; };
 		CCA60C5323EB29750046842E /* StatisticDurView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCA60C5223EB29750046842E /* StatisticDurView.swift */; };
 		CCC02A7023E9699F00FCE7DA /* ActivityView2.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCC02A6F23E9699F00FCE7DA /* ActivityView2.swift */; };
 		CCC02A7923E992F600FCE7DA /* ActivityView3.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCC02A7823E992F600FCE7DA /* ActivityView3.swift */; };
@@ -45,7 +44,6 @@
 		CC45CEB623E858200027A2DF /* ImagePickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePickerView.swift; sourceTree = "<group>"; };
 		CC45CEBC23E869C70027A2DF /* StatisticsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticsViewModel.swift; sourceTree = "<group>"; };
 		CC45CEBE23E869E10027A2DF /* Statistic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Statistic.swift; sourceTree = "<group>"; };
-		CC73B32723EB572000D8AE9A /* CustomerCardView2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomerCardView2.swift; sourceTree = "<group>"; };
 		CCA60C5223EB29750046842E /* StatisticDurView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticDurView.swift; sourceTree = "<group>"; };
 		CCC02A6F23E9699F00FCE7DA /* ActivityView2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityView2.swift; sourceTree = "<group>"; };
 		CCC02A7823E992F600FCE7DA /* ActivityView3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityView3.swift; sourceTree = "<group>"; };
@@ -137,7 +135,6 @@
 				CC45CEAE23E849400027A2DF /* CreateActivityView.swift */,
 				CC45CEB023E84B7A0027A2DF /* CreateCustomerView.swift */,
 				CC45CEB223E853080027A2DF /* CustomerCardView.swift */,
-				CC73B32723EB572000D8AE9A /* CustomerCardView2.swift */,
 				CC45CEB423E854300027A2DF /* WeekPlanningView.swift */,
 				CCC02A7823E992F600FCE7DA /* ActivityView3.swift */,
 				CCD70D6223E9A31D00F491D7 /* ActivityView4.swift */,
@@ -242,7 +239,6 @@
 				CC45CEAB23E847D70027A2DF /* Activity.swift in Sources */,
 				CCD70D6323E9A31D00F491D7 /* ActivityView4.swift in Sources */,
 				CC45CEBD23E869C70027A2DF /* StatisticsViewModel.swift in Sources */,
-				CC73B32823EB572000D8AE9A /* CustomerCardView2.swift in Sources */,
 				CC45CEAF23E849400027A2DF /* CreateActivityView.swift in Sources */,
 				CC45CEBF23E869E10027A2DF /* Statistic.swift in Sources */,
 				CCD9104023E82A580025B11E /* CustomerListView.swift in Sources */,
