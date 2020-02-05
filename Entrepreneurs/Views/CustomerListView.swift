@@ -64,11 +64,15 @@ struct CustomerListView: View {
                 }
                 .navigationBarTitle(Text("Clients"), displayMode: .inline).navigationBarItems(
                     //leading: Image(systemName:"calendar"),
-                    trailing: NavigationLink(destination: CreateCustomerView2()) {
+                    trailing: NavigationLink(destination: CreateCustomerView()) {
                         Image(systemName:"person.badge.plus")
                     }.buttonStyle(PlainButtonStyle()))
                     .resignKeyboardOnDragGesture()
             }
+        }
+        .tabItem {
+                Image(systemName: "person.3")
+                Text("Clients")
         }
     }
 }

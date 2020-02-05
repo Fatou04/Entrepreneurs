@@ -55,7 +55,7 @@ struct CreateActivityView: View {
                 
                 HStack {
                     Text("Client")
-                    NavigationLink(destination: CreateCustomerView2()) {
+                    NavigationLink(destination: CreateCustomerView()) {
                     TextField("nom du client", text: $clientName)
                         .foregroundColor(.gray)
                     .buttonStyle(PlainButtonStyle())

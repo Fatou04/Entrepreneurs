@@ -15,10 +15,7 @@ struct ContentView: View {
             DayPlanningView() //planning view
             
             CustomerListView()
-                .tabItem {
-                    Image(systemName: "person.3")
-                    Text("Clients")
-            }
+                
             
             StatisticDurView()
             

@@ -6,7 +6,6 @@
 //  Copyright © 2020 Audrey Detsaboun. All rights reserved.
 //
 
-
 import SwiftUI
 
 struct CreateCustomerView: View {
@@ -78,7 +77,7 @@ struct CreateCustomerView: View {
                                         }
                                     })
                                     {
-                                        Text("Ajouter une image")
+                                        Text("+ Ajouter une image")
                                             .fontWeight(.heavy)
                                     }
                                 }
@@ -91,50 +90,50 @@ struct CreateCustomerView: View {
                         .foregroundColor(Color.gray)
                     }
                     
+                    
                     VStack(spacing: 40) {
-                        VStack{
+                        Form{
                             HStack{
-                                Text("lastName:")
-                                TextField("lastName", text: $lastName)
-                                    
-                                    .border(Color.gray).foregroundColor(.primary)
+                                Text("Nom")
+                                TextField("Nom", text: $lastName)
+                                    .foregroundColor(.primary)
                             }
                             
                             HStack{
-                                Text("firstName:")
-                                TextField("PrélastName", text: $firstName)
-                                    .border(Color.gray)
+                                Text("Prénom")
+                                TextField("Prénom", text: $firstName)
                             }
                             HStack{
-                                Text("firm:")
-                                TextField("firm", text: $firm)
-                                    .border(Color.gray)
+                                Text("Entreprise")
+                                TextField("Entreprise", text: $firm)
                             }
                             HStack{
-                                Text("phoneNumber:")
-                                TextField("phoneNumber", text: $phoneNumber)
-                                    .border(Color.gray)
+                                Text("Téléphone")
+                                TextField("Téléphone", text: $phoneNumber)
                             }
                             HStack{
-                                Text("Mail:")
-                                TextField("mail", text: $mail)
-                                    .border(Color.gray)
+                                Text("Email")
+                                TextField("Email", text: $mail)
                             }
                             HStack{
-                                Text("direction:")
-                                TextField("direction", text: $direction)
-                                    .border(Color.gray)
+                                Text("Adresse")
+                                TextField("Adresse", text: $direction)
                             }
-                            HStack{
-                                Text("Note:")
-                                TextField("Note Particulier", text: $note)
-                                    .border(Color.gray)
+                            
+                            VStack(alignment: .leading) {
+                                Text("Notes")
+                                TextField(" ...", text: $note)
+                                    .padding(.bottom, 100.0)
+                                    .foregroundColor(.gray)
+                                    .border(Color.gray, width: /*@START_MENU_TOKEN@*/1/*@END_MENU_TOKEN@*/)
                             }
+                            Spacer()
                         }
                     }
                     .padding()
-                    .font(.title)
-                    Spacer()
+                    
+                    
+                    
                 }
             }
         
