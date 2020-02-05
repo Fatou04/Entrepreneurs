@@ -20,11 +20,14 @@ struct ContentView: View {
                     Text("Clients")
             }
             
+            StatisticDurView()
+            
+            /*
             StatisticsView(viewModel: StatisticsViewModel())
                 .tabItem {
                     Image(systemName: "chart.pie")
                     Text("Stats")
-            }
+            }*/
         }
     }
 }
