@@ -16,11 +16,11 @@ struct StatisticDurView2: View {
                 HStack{
                     Text("Sélectionner le mois")
                     Spacer()
-                    Image(systemName:"chevron.left")
+                    Image(systemName:"chevron.left").foregroundColor(Color.blue)
                     Text(" Septembre 2019 ")
                         .font(.headline)
                         .fontWeight(.semibold)
-                    Image(systemName:"chevron.right")
+                    Image(systemName:"chevron.right").foregroundColor(Color.blue)
                 }
                 .padding(.horizontal, 20)
                 
@@ -95,7 +95,7 @@ struct StatisticDurView2: View {
                 Spacer()
             }.padding(.horizontal, 10)
             .navigationBarTitle(Text("Statistiques d'août 2019"), displayMode: .inline).navigationBarItems(
-            trailing: Image(systemName:"paperclip"))
+            trailing: Image(systemName:"paperclip").foregroundColor(Color.blue))
        
     }
     

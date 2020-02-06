@@ -18,6 +18,8 @@
 		CC45CEBF23E869E10027A2DF /* Statistic.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC45CEBE23E869E10027A2DF /* Statistic.swift */; };
 		CC73B32A23EB5C9E00D8AE9A /* StatisticDurView2.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC73B32923EB5C9E00D8AE9A /* StatisticDurView2.swift */; };
 		CCA60C5323EB29750046842E /* StatisticDurView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCA60C5223EB29750046842E /* StatisticDurView.swift */; };
+		CCB7A35623EC2A6400FD17F9 /* ListeColaborateur.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCB7A35523EC2A6400FD17F9 /* ListeColaborateur.swift */; };
+		CCB7A35823EC2B4D00FD17F9 /* Colaborateur.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCB7A35723EC2B4D00FD17F9 /* Colaborateur.swift */; };
 		CCC02A7923E992F600FCE7DA /* ActivityView3.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCC02A7823E992F600FCE7DA /* ActivityView3.swift */; };
 		CCD70D6323E9A31D00F491D7 /* ActivityView4.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCD70D6223E9A31D00F491D7 /* ActivityView4.swift */; };
 		CCD9102723E81D5F0025B11E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCD9102623E81D5F0025B11E /* AppDelegate.swift */; };
@@ -44,6 +46,8 @@
 		CC45CEBE23E869E10027A2DF /* Statistic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Statistic.swift; sourceTree = "<group>"; };
 		CC73B32923EB5C9E00D8AE9A /* StatisticDurView2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatisticDurView2.swift; sourceTree = "<group>"; };
 		CCA60C5223EB29750046842E /* StatisticDurView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticDurView.swift; sourceTree = "<group>"; };
+		CCB7A35523EC2A6400FD17F9 /* ListeColaborateur.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListeColaborateur.swift; sourceTree = "<group>"; };
+		CCB7A35723EC2B4D00FD17F9 /* Colaborateur.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colaborateur.swift; sourceTree = "<group>"; };
 		CCC02A7823E992F600FCE7DA /* ActivityView3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityView3.swift; sourceTree = "<group>"; };
 		CCD70D6223E9A31D00F491D7 /* ActivityView4.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityView4.swift; sourceTree = "<group>"; };
 		CCD9102323E81D5F0025B11E /* Entrepreneurs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Entrepreneurs.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -117,6 +121,7 @@
 				CC45CEA823E847940027A2DF /* Customer.swift */,
 				CC45CEAA23E847D70027A2DF /* Activity.swift */,
 				CC45CEBE23E869E10027A2DF /* Statistic.swift */,
+				CCB7A35723EC2B4D00FD17F9 /* Colaborateur.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -136,6 +141,7 @@
 				CCD70D6223E9A31D00F491D7 /* ActivityView4.swift */,
 				CCA60C5223EB29750046842E /* StatisticDurView.swift */,
 				CC73B32923EB5C9E00D8AE9A /* StatisticDurView2.swift */,
+				CCB7A35523EC2A6400FD17F9 /* ListeColaborateur.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -226,6 +232,7 @@
 				CCD9104223E82A6A0025B11E /* StatisticsView.swift in Sources */,
 				CCD9102723E81D5F0025B11E /* AppDelegate.swift in Sources */,
 				CC45CEB723E858200027A2DF /* ImagePickerView.swift in Sources */,
+				CCB7A35623EC2A6400FD17F9 /* ListeColaborateur.swift in Sources */,
 				CCA60C5323EB29750046842E /* StatisticDurView.swift in Sources */,
 				CC45CEB323E853080027A2DF /* CustomerCardView.swift in Sources */,
 				CC45CEA923E847940027A2DF /* Customer.swift in Sources */,
@@ -238,6 +245,7 @@
 				CC45CEAF23E849400027A2DF /* CreateActivityView.swift in Sources */,
 				CC45CEBF23E869E10027A2DF /* Statistic.swift in Sources */,
 				CCD9104023E82A580025B11E /* CustomerListView.swift in Sources */,
+				CCB7A35823EC2B4D00FD17F9 /* Colaborateur.swift in Sources */,
 				CC45CEB523E854300027A2DF /* WeekPlanningView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

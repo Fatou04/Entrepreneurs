@@ -17,7 +17,7 @@ struct DayPlanningView: View {
                     .multilineTextAlignment(.leading)
                     .lineLimit(-150)
                     .padding(.leading, -165.0)
-                    .padding(.top, 30)
+                    .padding(.top, 30.0)
                 
                 HStack{
                     HStack{
@@ -175,10 +175,12 @@ struct DayPlanningView: View {
                     .navigationBarTitle(Text("Vue Jour"), displayMode: .inline)
                     .navigationBarItems(
                         leading: NavigationLink(destination: WeekPlanningView()) {
-                            Image(systemName: "calendar") }.buttonStyle(PlainButtonStyle()).resignKeyboardOnDragGesture(),
+                            Image(systemName: "calendar") }
+                            .foregroundColor(Color.blue) .buttonStyle(PlainButtonStyle()).resignKeyboardOnDragGesture(),
                         trailing: NavigationLink(destination: CreateActivityView()) {
                         Image(systemName:"text.badge.plus")
-                    }.buttonStyle(PlainButtonStyle()))
+                    }.foregroundColor(Color.blue)
+                        .buttonStyle(PlainButtonStyle()))
                     .resignKeyboardOnDragGesture()
                     
                     

@@ -197,7 +197,8 @@ struct WeekPlanningView: View {
         .navigationBarItems(
             trailing: NavigationLink(destination: CreateActivityView()) {
             Image(systemName:"text.badge.plus")
-        }.buttonStyle(PlainButtonStyle()))
+        }.foregroundColor(Color.blue)
+            .buttonStyle(PlainButtonStyle()))
         .resignKeyboardOnDragGesture()
           
             }

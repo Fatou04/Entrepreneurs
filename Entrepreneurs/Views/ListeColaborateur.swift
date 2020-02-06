@@ -1,23 +1,21 @@
 //
-//  CustomerListView.swift
+//  ListeColaborateur.swift
 //  Entrepreneurs
 //
-//  Created by Audrey Detsaboun on 03/02/2020.
+//  Created by Audrey Detsaboun on 06/02/2020.
 //  Copyright © 2020 Audrey Detsaboun. All rights reserved.
 //
 
-
-
 import SwiftUI
 
-struct CustomerListView: View {
-    let array = ["Steve Jobs", "Tim Cook", "Mary Popins", "Albert Einstein", "George Washington", "John Lennon", "Thomas", "Robert Redford", "Bernie", "Swift Mike", "Victior Hugo", "Chris Lattner", "Michael Jackson", "Samuel L. Jackson", "Sabih Khan"]
+struct ListeColaborateur: View {
+    let array = ["Elisa SIMPLON.CO","Michel JACKSON", "Paul DUPONT", "Mary DE LA FONTAINE", "Anna-Lena DELARUE", "George BUSH", "John CARTER", "Barbara LAMINE"]
     @State private var searchText = ""
     @State private var showCancelButton: Bool = false
     
     var body: some View {
         
-        NavigationView {
+        
             VStack {
                 // Search view
                 HStack {
@@ -57,62 +55,32 @@ struct CustomerListView: View {
                     // Filtered list of names
                     ForEach(array.filter{$0.hasPrefix(searchText) || searchText == ""}, id:\.self) {
                         searchText in
-                        NavigationLink(destination: CustomerCardView(), label :  {
+                        NavigationLink(destination: Colaborateur(), label :  {
                             Text(searchText)
                         })
                     }
                 }
-                .navigationBarTitle(Text("Clients"), displayMode: .inline).navigationBarItems(
+                .navigationBarTitle(Text("liste Colaborateur"), displayMode: .inline).navigationBarItems(
                     //leading: Image(systemName:"calendar"),
                     trailing: NavigationLink(destination: CreateCustomerView()) {
                         Image(systemName:"person.badge.plus")
-                    }.foregroundColor(Color.blue)
-                    .buttonStyle(PlainButtonStyle()))
+                    }.buttonStyle(PlainButtonStyle()))
                     .resignKeyboardOnDragGesture()
             }
-        }
-        .tabItem {
-                Image(systemName: "person.3")
-                Text("Clients")
-        }
+        
     }
 }
 
 
 
-struct CustomerListView_Previews: PreviewProvider {
+struct ListeColaborateur_Previews: PreviewProvider {
     static var previews: some View {
         Group {
-            CustomerListView()
+            ListeColaborateur()
                 .environment(\.colorScheme, .light)
             
-            CustomerListView()
+            ListeColaborateur()
                 .environment(\.colorScheme, .dark)
         }
     }
 }
-
-extension UIApplication {
-    func endEditing(_ force: Bool) {
-        self.windows
-            .filter{$0.isKeyWindow}
-            .first?
-            .endEditing(force)
-    }
-}
-
-struct ResignKeyboardOnDragGesture: ViewModifier {
-    var gesture = DragGesture().onChanged{_ in
-        UIApplication.shared.endEditing(true)
-    }
-    func body(content: Content) -> some View {
-        content.gesture(gesture)
-    }
-}
-
-extension View {
-    func resignKeyboardOnDragGesture() -> some View {
-        return modifier(ResignKeyboardOnDragGesture())
-    }
-}
-

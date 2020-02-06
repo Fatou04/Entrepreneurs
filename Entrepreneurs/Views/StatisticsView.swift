@@ -47,7 +47,7 @@ struct StatisticsView: View {
                 Text(statistic.activity)
                 
             }.navigationBarTitle(Text("Statistiques d'août 2019"), displayMode: .inline).navigationBarItems(
-                trailing: Image(systemName:"paperclip"))
+                trailing: Image(systemName:"paperclip").foregroundColor(Color.blue))
         }
     }
 }

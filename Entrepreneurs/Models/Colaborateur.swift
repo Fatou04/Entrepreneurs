@@ -1,21 +1,13 @@
-//
-//  CustomerCardView.swift
-//  Entrepreneurs
-//
-//  Created by Audrey Detsaboun on 03/02/2020.
-//  Copyright © 2020 Audrey Detsaboun. All rights reserved.
-//
-
 import SwiftUI
 
-struct CustomerCardView: View {
+struct Colaborateur: View {
     
     var body: some View {
         
                 VStack (spacing: 40) {
                     VStack{
                         HStack{
-                            Image("image")
+                            Image("images")
                                 .resizable()
                                 .aspectRatio(contentMode: .fill)
                                 .clipShape(Circle())
@@ -24,15 +16,15 @@ struct CustomerCardView: View {
                         
                         VStack(spacing: 10) {
                             HStack{
-                                Text("Steve")
+                                Text("Elisa")
                                     .font(.headline)
                                     .fontWeight(.bold)
-                                Text("JOBS")
+                                Text("SIMPLON.CO")
                                     .font(.headline)
                                     .fontWeight(.bold)
                             }
                             HStack{
-                                Text("APPLE")
+                                Text("SIMPLON")
                                     .font(.headline)
                                     .fontWeight(.bold)
                             }
@@ -54,25 +46,25 @@ struct CustomerCardView: View {
                                 Text("Entreprise")
                                 .fontWeight(.semibold)
                                 Spacer()
-                                Text("Apple")
+                                Text("Simplon")
                             }
                             HStack{
                                 Text("Téléphone")
                                 .fontWeight(.semibold)
                                 Spacer()
-                                Text("+336 765 654 65")
+                                Text("+336 265 344 60")
                             }
                             HStack{
                                 Text("Email")
                                 .fontWeight(.semibold)
                                 Spacer()
-                                Text("steve.jobs@apple.com")
+                                Text("elisa@simplon.com")
                             }
                             HStack{
                                 Text("Adresse")
                                 .fontWeight(.semibold)
                                 Spacer()
-                                Text("2 rue de la pomme, \r 94500 Montreuil")
+                                Text("55 rue de vincennes, \r 94500 Montreuil")
                                     .multilineTextAlignment(.trailing)
                             }
                             Spacer()
@@ -82,39 +74,24 @@ struct CustomerCardView: View {
                                     Text("Note")
                                         .font(.headline)
                                         .fontWeight(.semibold)
-                                    Text("Contrat Itunes terminé, contrat Safari en cours de réalisation.")
-                                    //.padding(.bottom, 30.0)
-                            }
-                            
-                            VStack(alignment: .leading){
-                               Text("Projets")
-                               .fontWeight(.semibold)
-                               Spacer()
-                               HStack {
-                                   Text("Safari : ")
-                                Spacer()
-                                   Text("En cours")
-                               }
-                               HStack {
-                                   Text("Itunes : ")
-                                Spacer()
-                                   Text("Terminé")
-                               }
+                                    Text("Projet Apple Fondation 2019 Terminer, contrat Apple Fondation 2020 en cours.")
+                                    .padding(.bottom, 100.0)
                             }
                         }
                     }
                     .padding()
-                }.navigationBarTitle("Contact", displayMode: .inline)
-                    .navigationBarItems(trailing: Text("Modifer").foregroundColor(Color.blue))
+                }.navigationBarTitle("Colaborateur", displayMode: .inline)
+                .navigationBarItems(trailing: Text("Valider"))
             
         
     }
 }
 
-struct CustomerCardView_Previews: PreviewProvider {
+struct Colaborateur_Previews: PreviewProvider {
     static var previews: some View {
         NavigationView {
-            CustomerCardView()
+            Colaborateur()
         }
     }
 }
+

@@ -64,7 +64,7 @@ struct ActivityView3: View {
                     }
                 } .navigationBarTitle(Text("Casino"), displayMode: .inline)
                 .navigationBarItems(
-                    trailing: Text("Modifier"))
+                    trailing: Text("Modifier").foregroundColor(Color.blue))
     }
 }
 

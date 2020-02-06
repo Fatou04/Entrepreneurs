@@ -14,6 +14,7 @@ struct CreateActivityView: View {
     
     @State private var activityName = ""
     @State private var clientName = ""
+    @State private var colaborateur = ""
     @State private var notes = ""
     
     
@@ -63,6 +64,16 @@ struct CreateActivityView: View {
                     }
                 }
                 
+                HStack {
+                    Text("Colaborateur")
+                    NavigationLink(destination: ListeColaborateur()) {
+                        TextField("non du colaborateur", text: $colaborateur)
+                            .foregroundColor(.gray)
+                            .buttonStyle(PlainButtonStyle())
+                        
+                    }
+                }
+                
                 VStack(alignment: .leading) {
                     Text("Notes")
                     TextField(" ...", text: $notes)
@@ -78,7 +89,8 @@ struct CreateActivityView: View {
             .navigationBarItems(
                 trailing: NavigationLink(destination: ActivityView4()) {
                 Text("Valider")
-            }.buttonStyle(PlainButtonStyle()))
+                }.foregroundColor(Color.blue)
+                .buttonStyle(PlainButtonStyle()))
             .resignKeyboardOnDragGesture()
             
             
